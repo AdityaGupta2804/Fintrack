@@ -3,6 +3,12 @@
 **FinTrack** is a smart, modern web app to track your income and expenses, analyze spending patterns, and stay in control of your finances.
 
 ---
+## Project Demo
+<p align="center">
+  <img src="./Fintrack_demo-ezgif.com-optimize.gif" alt="FinTrack Architecture" width="700"/>
+  <br/>
+  <b>FinTrack Demo</b>
+</p>
 
 ## Project Overview
 
