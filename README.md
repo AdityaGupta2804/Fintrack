@@ -1,64 +1,175 @@
-# CashBook Expense Tracker Website
+# FinTrack – Personal Finance Tracker Web App
 
-> An expense tracker application built with the MERN stack & Ant Design.
+**FinTrack** is a smart, modern web app to track your income and expenses, analyze spending patterns, and stay in control of your finances.
 
-This is a full stack Expense Tracker Application built using MongoDB, Express.JS, React.JS, Node.JS
+---
 
-## Features
+## Project Overview
 
-- Add, Edit and Delete Transactions.
-- Filter transactions by Date.
-- Filter transactions by Type.
-- Analysis of amount earned through income as well as amount spent through expense.
-- Analysis of various types of income and expense.
-- User login and logout.
-- All the things are updated without page reloading.
+**FinTrack** is a digital finance manager that helps you record, view, and analyze your money flow.
 
-## Usage
+Whether you're a student, a working professional, or just budget-conscious, FinTrack gives you an intuitive way to:
 
-### ES Modules in Node
+- Add income or expense entries  
+- Categorize them  
+- View real-time financial analytics  
 
-I use ECMAScript Modules in the backend in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
+It works like your personal money diary — **simple, beautiful, and powerful**.
 
-Also, when importing a file (not a package), be sure to add .js at the end or you will get a "module not found" error
+---
 
-You can also install and setup Babel if you would like
+## Technical Overview
 
-### Env Variables
+FinTrack is a full-stack **MERN** application (MongoDB, Express.js, React, Node.js) designed with modern tools for performance and user experience.
 
-Create a .env file in then root and add the following
+**Key Technical Highlights:**
 
+- Fully **responsive UI** built with **Ant Design**  
+- **JWT-based authentication** for secure user login  
+- **Single Page Application (SPA)** using React  
+- Dynamic state updates with Context API  
+- Real-time analytics and smart data visualization  
+- Modular backend integrated with MongoDB and REST APIs  
+
+---
+
+## Key Features
+
+- **Add / Edit / Delete Transactions**  
+- **Filter by Date Range**  
+- **Filter by Type** (Income / Expense)  
+- **Earnings vs. Expenses Breakdown**  
+- **Category-wise Analysis**  
+- **User Authentication (Login / Logout)**  
+- **Dynamic UI Updates without Page Reloads**  
+- **Responsive Design with Ant Design Components**  
+
+---
+
+## Architecture Diagram
+
+<!-- ![FinTrack Architecture](/fintrack-architecture.png) -->
+<p align="center">
+  <img src="fintrack-architecture.png" alt="FinTrack Architecture" width="700"/>
+  <br/>
+  <b>FinTrack Architecture Diagram</b>
+</p>
+
+
+This diagram shows how the **frontend**, **backend**, **database**, and **authentication system** work together in FinTrack.
+
+---
+
+## Tech Stack
+
+| **Layer**        | **Technology Used**                 | **Purpose**                               |
+|------------------|-------------------------------------|--------------------------------------------|
+| Frontend         | React.js, Ant Design                | UI, Components, and Styling                |
+| Backend          | Node.js, Express.js                 | REST API & Business Logic                  |
+| Database         | MongoDB                             | Persistent Storage for Transactions        |
+| State Management | React Context API + useReducer      | Global State Handling                      |
+| Authentication   | JSON Web Tokens (JWT)               | Secure Login and Session Management        |
+| Environment      | dotenv                              | Environment Variable Configuration         |
+| Deployment       | Vercel (Frontend), Render (Backend) | App Hosting                                |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** v14.6+ (required for ES Modules support)  
+- **MongoDB URI**  
+- **Git**
+
+---
+
+### Installation
+
+```bash
+# 1. Clone the Repository
+git clone https://github.com/guptasamarth200/FinTrack.git
+cd FinTrack
+````
+
+```bash
+# 2. Configure Environment Variables
+touch .env
 ```
-NODE_ENV = development
-PORT = 5000
-MONGO_URI = Your Mongo DB URI [Mongo DB connection string]
 
+Add the following inside your `.env` file:
+
+```ini
+NODE_ENV=development
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
 ```
 
-### Install Dependencies (frontend & backend)
-
-```
+```bash
+# 3. Install Backend Dependencies
 npm install
+```
+
+```bash
+# 4. Move to Frontend and Install Dependencies
 cd frontend
 npm install
 ```
 
-### Run
+---
 
+### Running the Application
+
+**To run both frontend and backend:**
+
+```bash
+npm run start
 ```
-# Run frontend (:3000) & backend (:5000)
-npm run start/npm start
 
-# Run backend only
+**To run backend only:**
+
+```bash
 node server.js
 ```
 
-## Build & Deploy
+---
 
-```
-# Create frontend prod build
+## Build & Deployment
+
+**To create a production build:**
+
+```bash
 cd frontend
 npm run build
 ```
 
-There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
+
+
+---
+
+## Notes
+
+* Backend uses **ES Modules**, so ensure you're using **Node.js v14.6+**
+* When importing local files, always include the `.js` extension
+* Babel can be added if compatibility with older Node versions is needed
+
+---
+
+## Conclusion
+
+**FinTrack** simplifies personal finance tracking through a clean, modern, and mobile-friendly interface. It’s ideal for anyone looking to understand their **earnings vs. expenses**, control spending habits, and get actionable insights — all in real-time.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for full details.
+
+---
+
+## Contributing
+
+Contributions are welcome!
+Feel free to **open an issue** or **submit a pull request** to help improve the project.
+
