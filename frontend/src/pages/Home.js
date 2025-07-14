@@ -20,7 +20,7 @@ const Home = () => {
 
   const host =
     process.env.NODE_ENV === 'production'
-      ? 'https://fintrack-n5i1.onrender.com'
+      ? 'https://fintrack-s4xq.onrender.com'
       : 'http://localhost:5000'
   //  const host = 'http://localhost:5000'
 
