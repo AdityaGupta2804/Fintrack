@@ -14,7 +14,7 @@ const AddEditTransactions = (props) => {
 
   const host =
     process.env.NODE_ENV === 'production'
-      ? 'https://cash-book.vercel.app'
+      ? 'https://fintrack-n5i1.onrender.com'
       : 'http://localhost:5000'
 
   //  const host = 'http://localhost:5000'
